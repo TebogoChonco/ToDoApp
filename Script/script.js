@@ -34,9 +34,9 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Please add a task!");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myUl").appendChild(li);
   }
   document.getElementById("myInput").value = "";
 
@@ -53,3 +53,17 @@ function newElement() {
     }
   }
 }
+
+//Sort the items when clicking on the "Sort Tasks" button
+
+
+function sortList() {
+  const tasks = []
+  document.getElementById("myInput").innerHTML = tasks;
+
+  newTask = tasks.sort();
+  document.getElementById("myInput").innerHTML = newTask;
+}
+ 
+
+

@@ -10,16 +10,19 @@
    <!-- Link to Script with defer so I can link it in the head -->
    <script src="./Script/script.js" defer></script>
 
-    <title>Document</title>
+    <title>To Do App</title>
 </head>
 <body>
+  <div class="container"></div>
+
     <div id="myDIV" class="header">
         <h2 style="margin:5px">To Do App</h2>
         <input type="text" id="myInput" placeholder="New task">
-        <span onclick="newElement()" class="addBtn">Add</span>
+        <span onclick="newElement()"  class="addBtn">Add</span>
+        <button onclick="sortList()">Sort Tasks</button>
       </div>
       
-      <ul id="myUL">
+      <ul id="myUl">
         <li></li>
       </ul>    
 </body>
