@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- link to style sheet -->
-   <link rel="stylesheet" href="./CSS/style.css">
+  <!-- link to style sheet -->
+  <link rel="stylesheet" href="./CSS/style.css">
 
-   <!-- Link to Script with defer so I can link it in the head -->
-   <script src="./Script/script.js" defer></script>
-   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+  <!-- Link to Script with defer so I can link it in the head -->
+  <script src="./Script/script.js" defer></script>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
 
   <title>Practice ToDo App</title>
 </head>
@@ -19,28 +19,30 @@
 
   <div class="container">
     <div class="spacer"></div>
-      <h2 style="margin:5px" class="appHeading">To Do App</h2>
+    <h2 style="margin:5px" class="appHeading">To Do App</h2>
   </div>
-<div class="inputs">
-  <form id="form">
-  <label for="Task">Task:</label>
-  <input type="text" placeholder="New task" id="input 1">
-  <label for="date">Due date:</label>
-  <input type="date" class="date" id="input 2">
-    <div id="notice"></div>
-  <div class="myBtn">
-   <button type="submit" id="add" onclick ="addTask()">Add task</button>
+  <div class="inputs">
+    <form id="form">
+      <label for="Task">Task:</label>
+      <input type="text" placeholder="New task" id="input 1">
+      <label for="date">Due date:</label>
+      <input type="date" class="date" id="input 2">
+      <div id="notice"></div>
+      <div class="myBtn">
+        <button type="submit" id="add" onclick="addTask()">Add task</button>
+      </div>
+    </form>
   </div>
-</form>
-</div>
-<div class="outputs">
-  <h1>List of tasks:</h1>
-  <div id="tasks">
-   <ol id="taskList">
-   </ol>
+  <div class="outputs">
+    <h1>List of tasks:</h1>
+    <div id="tasks">
+      <ol id="taskList">
+        <span id="myButtons"></span>
+      </ol>
 
+    </div>
   </div>
-</div>
 
 </body>
+
 </html>

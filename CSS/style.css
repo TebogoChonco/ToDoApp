@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  
+
 }
 
-html{
+html {
 
- /* background-image: url(../Images/notepad.png);*/
- background-color: rgb(243, 207, 230);
+  /* background-image: url(../Images/notepad.png);*/
+  background-color: rgb(243, 207, 230);
   background-repeat: no-repeat;
   background-size: 90vh;
   margin: 0;
@@ -20,20 +20,21 @@ html{
 
 .appHeading {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 75px;
-  color: rgb(162, 49, 123);
+  font-size: 65px;
+  color: rgb(101, 98, 93);
   text-align: center;
+  padding-bottom: 16px;
 }
 
 input {
   width: 200px;
   height: 50px;
   font-size: 20px;
-  background-color: rgb(228, 169, 214);
+  background-color: rgb(233, 200, 225);
   border-color: rgb(197, 22, 144);
-  border-width: 3px;
+  border-width: 0;
   border-radius: 8px;
-  color: rgb(33, 34, 34);
+  color: rgb(98, 102, 105);
   padding: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -43,64 +44,67 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button {
+#add {
   font-size: 28px;
   width: 160px;
   padding: 2px 8px;
   border-radius: 8px;
-  background-color: rgb(176, 72, 176);
+  background-color: rgb(146, 62, 146);
   color: aliceblue;
 }
 
-::placeholder{
+::placeholder {
   color: rgb(98, 102, 105);
-  font-size: 25px ;
+  font-size: 25px;
 }
 
-#tasks{
+#tasks {
   font-size: 28px;
+
 }
-#notice{
+
+#tasks.taskList {
+  display: flex;
+  justify-content: space-between;
+}
+
+#notice {
   font-size: 28px;
 }
 
-.myBtn{
-text-align:center ;
+.myBtn {
+  text-align: center;
 }
 
 #form {
+
+  background-color: rgb(216, 156, 194);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
-  width: 90%;
-  /* height: 50 px ; */
+  margin: 0;
   align-items: center;
-  padding: 35px;
   gap: 7px;
-  /* padding-left: 15%;
-  padding-top: 7%;
-*/
+
 }
 
 .outputs {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  /* height: 50 px ; */
   align-items: center;
-  padding: 5px;
-  gap: 10px;
- /*  padding-left: 15%;
-  padding-top: 7%; */
+  /*padding: 5px;
+  gap: 10px;*/
+
 
 }
 
 #notice {
-  color: rgb(137, 10, 10);
+
+  color: rgb(252, 240, 252);
   /*background-color: rgb(236, 175, 175);*/
-  padding: 8px;;
+  padding: 8px;
+  ;
   border-radius: 2px;
-  
+
 
 }
