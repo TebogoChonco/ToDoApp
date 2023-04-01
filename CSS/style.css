@@ -1,11 +1,13 @@
+title{
+  height: 100px;
+}
+
 body {
   margin: 0;
 
 }
 
 html {
-
-  /* background-image: url(../Images/notepad.png);*/
   background-color: rgb(243, 207, 230);
   background-repeat: no-repeat;
   background-size: 90vh;
@@ -13,29 +15,23 @@ html {
   padding: 0;
 }
 
-/* .spacer{
-  width: 100%;
-  height: 430px;
-} */
-
 .appHeading {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 65px;
-  color: rgb(101, 98, 93);
+  font-family:'Times New Roman', Times, serif;
+  border: 10px;
+  font-size: 55px;
+  color: rgb(107, 106, 104);
   text-align: center;
-  padding-bottom: 16px;
+  padding: 16px;
+
 }
 
 input {
   width: 200px;
-  height: 50px;
+  height: 40px;
   font-size: 20px;
   background-color: rgb(233, 200, 225);
-  border-color: rgb(197, 22, 144);
-  border-width: 0;
-  border-radius: 8px;
   color: rgb(98, 102, 105);
-  padding: 5px;
+  padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -46,10 +42,10 @@ label {
 
 #add {
   font-size: 28px;
-  width: 160px;
-  padding: 2px 8px;
+  width: 140px;
+  padding: 8px;
   border-radius: 8px;
-  background-color: rgb(146, 62, 146);
+  background-color: rgb(136, 130, 136);
   color: aliceblue;
 }
 
@@ -68,21 +64,22 @@ label {
   justify-content: space-between;
 }
 
-#notice {
-  font-size: 28px;
-}
-
 .myBtn {
   text-align: center;
 }
 
-#form {
+.inputs{
+  background-color: rgb(165, 123, 148);
+  border-radius: 6px;
+  height: 350px;
+  
+}
 
-  background-color: rgb(216, 156, 194);
+#form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0;
+  margin-top: 20px;
   align-items: center;
   gap: 7px;
 
@@ -92,19 +89,13 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*padding: 5px;
-  gap: 10px;*/
-
-
+ 
 }
 
 #notice {
 
-  color: rgb(252, 240, 252);
-  /*background-color: rgb(236, 175, 175);*/
+  color: rgb(247, 243, 243);
   padding: 8px;
-  ;
   border-radius: 2px;
-
-
+  font-size: 28px;
 }
