@@ -1,28 +1,43 @@
-title{
-  height: 100px;
-}
-
-body {
-  margin: 0;
-
-}
-
 html {
   background-color: rgb(243, 207, 230);
-  background-repeat: no-repeat;
-  background-size: 90vh;
-  margin: 0;
-  padding: 0;
 }
 
 .appHeading {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   border: 10px;
   font-size: 55px;
   color: rgb(107, 106, 104);
   text-align: center;
   padding: 16px;
+  margin: 25px;
+}
 
+.taskInput {
+  background-color: rgb(233, 200, 225);
+  padding: 10px;
+  border-radius: 8px;
+  color: rgb(245, 247, 248);
+  font-size: 20px;
+}
+
+#taskInput::placeholder {
+  color: rgb(107, 106, 104);
+}
+
+#new-task-submit {
+  color: rgb(250, 247, 250);
+  font-size: 20px;
+  width: 200 px;
+  height: 40px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: rgb(116, 112, 116);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
 }
 
 input {
@@ -38,6 +53,7 @@ input {
 label {
   font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(244, 246, 248);
 }
 
 #add {
@@ -46,7 +62,7 @@ label {
   padding: 8px;
   border-radius: 8px;
   background-color: rgb(136, 130, 136);
-  color: aliceblue;
+  color: rgb(43, 49, 54);
 }
 
 ::placeholder {
@@ -54,46 +70,69 @@ label {
   font-size: 25px;
 }
 
-#tasks {
-  font-size: 28px;
+.task-list h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(65, 65, 62)
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.task .actions .completed {
+  color: rgb(151, 67, 136);
+  font-size: 20 px;
+  text-transform: uppercase;
+}
+
+#completed button {
+  color: rgb(189, 136, 168);
+}
+
+.task .actions .edit {
+  background-color: rgb(151, 67, 136);
+  color: antiquewhite;
 
 }
 
-#tasks.taskList {
-  display: flex;
+.task .actions .delete {
+  background-color: rgb(219, 76, 107);
+  color: antiquewhite;
+}
+
+.tasks {
   justify-content: space-between;
 }
 
-.myBtn {
-  text-align: center;
-}
-
-.inputs{
-  background-color: rgb(165, 123, 148);
-  border-radius: 6px;
-  height: 350px;
-  
-}
-
-#form {
+form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  background-color: rgb(81, 45, 72);
   margin-top: 20px;
   align-items: center;
   gap: 7px;
-
+  color: rgb(249, 245, 248);
 }
 
 .outputs {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
- 
 }
 
 #notice {
-
   color: rgb(247, 243, 243);
   padding: 8px;
   border-radius: 2px;

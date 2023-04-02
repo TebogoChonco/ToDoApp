@@ -18,31 +18,29 @@
 <body>
 
   <div class="container">
-    <div class="spacer"></div>
-    <h2 style="margin:5px" class="appHeading">To Do App</h2>
-  </div>
-  <div class="inputs">
-    <form id="form">
-      <label for="Task">Task:</label>
-      <input type="text" placeholder="New task" id="input 1">
-      <label for="date">Due date:</label>
-      <input type="date" class="date" id="input 2">
-      <div id="notice"></div>
-      <div class="myBtn">
-        <button type="submit" id="add" onclick="addTask()">Add task</button>
-      </div>
-    </form>
-  </div>
-  <div class="outputs">
-    <h1>List of tasks:</h1>
-    <div id="tasks">
-      <ol id="taskList">
-        <span id="myButtons"></span>
-      </ol>
+    <h2 class="appHeading">To Do App</h2>
 
+    <div class="inputs">
+      <form id="new-task-form">
+        <label for="Task">Task:</label>
+        <input type="text" name="new-task-input" id="new-task-input" placeholder="New task" />
+        <label for="Task">Date:</label>
+        <input type="date" name="new-task-date" id="new-task-date" />
+        <div id="notice"></div>
+        <button type="submit" id="new-task-submit" value="Add task">Add task</button>
+      </form>
+    </div>
+
+    <div class="outputs">
+      <h1>List of tasks:</h1>
+      <div id="tasks">
+        <ol id="taskList">
+
+          <span id="actions"></span>
+        </ol>
+      </div>
     </div>
   </div>
-
 </body>
 
 </html>
