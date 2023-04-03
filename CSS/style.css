@@ -6,7 +6,7 @@ html {
   font-family: 'Times New Roman', Times, serif;
   border: 10px;
   font-size: 55px;
-  color: rgb(107, 106, 104);
+  color: rgb(84, 36, 75);
   text-align: center;
   padding: 16px;
   margin: 25px;
@@ -118,7 +118,7 @@ label {
 form {
   display: flex;
   flex-direction: column;
-  background-color: rgb(81, 45, 72);
+  background-color: rgb(110, 66, 99);
   margin-top: 20px;
   align-items: center;
   gap: 7px;
@@ -137,4 +137,9 @@ form {
   padding: 8px;
   border-radius: 2px;
   font-size: 28px;
+}
+
+.grey-mode {
+  background-color:  rgb(110, 66, 99);
+  color: rgb(181, 170, 176);
 }

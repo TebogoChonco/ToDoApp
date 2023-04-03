@@ -63,7 +63,7 @@ window.addEventListener('load', () => {
     });
 
     task_completed_el.addEventListener('click', (e) => {
-      list_el.toggleAttribute("disabled").task_el;
+      task_el.classList.toggle("grey-mode");
 
     });
 
