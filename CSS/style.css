@@ -44,9 +44,9 @@ input {
   width: 200px;
   height: 40px;
   font-size: 20px;
-  background-color: rgb(233, 200, 225);
-  color: rgb(98, 102, 105);
+  background-color: rgb(243, 207, 230);
   padding: 10px;
+  border: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -111,10 +111,6 @@ label {
   color: antiquewhite;
 }
 
-.tasks {
-  justify-content: space-between;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -129,9 +125,12 @@ form {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+ 
 }
 
+.list {
+   align-items: center; 
+}
 #notice {
   color: rgb(247, 243, 243);
   padding: 8px;
@@ -140,6 +139,6 @@ form {
 }
 
 .grey-mode {
-  background-color:  rgb(110, 66, 99);
+  background-color:  rgb(152, 91, 137);
   color: rgb(181, 170, 176);
 }
