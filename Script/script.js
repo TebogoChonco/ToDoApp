@@ -1,4 +1,5 @@
-window.addEventListener('load', () => {
+  //code to call the functions
+  window.addEventListener('load', () => {
   const form = document.querySelector("#new-task-form");
   const input = document.querySelector("#new-task-input");
   const date = document.querySelector("#new-task-date");
@@ -8,7 +9,7 @@ window.addEventListener('load', () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    //code to add and display the input element 
+    //code to add and display the input element of the task
     const task = input.value;
 
     const task_el = document.createElement('div');
@@ -29,6 +30,8 @@ window.addEventListener('load', () => {
 
     const task_actions_el = document.createElement('div');
     task_actions_el.classList.add('actions');
+
+    //code to add and display the date element of the task
 
     //code to add and display the button element 
     const task_completed_el = document.createElement('button');
