@@ -1,7 +1,9 @@
+/*code to give colour to the entire screen*/
 html {
   background-color: rgb(243, 207, 230);
 }
 
+/*code to style the elements*/
 .appHeading {
   font-family: 'Times New Roman', Times, serif;
   border: 10px;
@@ -125,12 +127,12 @@ form {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
- 
 }
 
 .list {
-   align-items: center; 
+  align-items: center;
 }
+
 #notice {
   color: rgb(247, 243, 243);
   padding: 8px;
@@ -138,7 +140,8 @@ form {
   font-size: 28px;
 }
 
+/*code to style the element once the button is clicked*/
 .grey-mode {
-  background-color:  rgb(152, 91, 137);
+  background-color: rgb(152, 91, 137);
   color: rgb(181, 170, 176);
 }

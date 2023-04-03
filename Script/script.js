@@ -4,9 +4,11 @@ window.addEventListener('load', () => {
   const date = document.querySelector("#new-task-date");
   const list_el = document.querySelector("#tasks");
 
+  //code to prevent form from refreshing everytime the button is clicked
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    //code to add and display the input element 
     const task = input.value;
 
     const task_el = document.createElement('div');
@@ -28,6 +30,7 @@ window.addEventListener('load', () => {
     const task_actions_el = document.createElement('div');
     task_actions_el.classList.add('actions');
 
+    //code to add and display the button element 
     const task_completed_el = document.createElement('button');
     task_completed_el.classList.add('completed');
     task_completed_el.innerText = 'Done';
@@ -49,8 +52,10 @@ window.addEventListener('load', () => {
 
     list_el.appendChild(task_el);
 
+    //code to reset the input element 
     input.value = '';
 
+    //code to give functionality to the button elements
     task_edit_el.addEventListener('click', (e) => {
       if (task_edit_el.innerText.toLowerCase() == "edit") {
         task_edit_el.innerText = "Save";
@@ -64,7 +69,6 @@ window.addEventListener('load', () => {
 
     task_completed_el.addEventListener('click', (e) => {
       task_el.classList.toggle("grey-mode");
-
     });
 
     task_delete_el.addEventListener('click', (e) => {
