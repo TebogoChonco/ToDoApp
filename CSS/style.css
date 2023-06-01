@@ -1,147 +1,86 @@
-/*code to give colour to the entire screen*/
-html {
+body {
+  font-family: sans-serif;
+  margin: 0 50px;
   background-color: rgb(243, 207, 230);
-}
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} 
+ h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(168, 69, 132);;
+ }
 
-/*code to style the elements*/
-.appHeading {
-  font-family: 'Times New Roman', Times, serif;
-  border: 10px;
-  font-size: 55px;
-  color: rgb(84, 36, 75);
-  text-align: center;
-  padding: 16px;
-  margin: 25px;
-}
-
-.taskInput {
-  background-color: rgb(233, 200, 225);
-  padding: 10px;
+.app {
+  background-color:rgb(249, 236, 244);
+  width: 90%;
+height:80%;
+  border: 5px solid rgb(168, 69, 132);
   border-radius: 8px;
-  color: rgb(245, 247, 248);
-  font-size: 20px;
+  padding: 15px;
+  overflow-y: scroll;
 }
 
-#taskInput::placeholder {
-  color: rgb(107, 106, 104);
+.app::-webkit-scrollbar {
+  width: 0 !important;
 }
 
-#new-task-submit {
-  color: rgb(250, 247, 250);
-  font-size: 20px;
-  width: 200 px;
-  height: 40px;
-  padding: 2px 8px;
-  border-radius: 8px;
-  background-color: rgb(116, 112, 116);
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(243, 207, 230);
+  padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: 0.4s;
 }
 
-#new-task-submit:hover {
-  opacity: 0.8;
+.fa-plus {
+  background-color: rgb(153, 146, 151);
+  padding: 3px;
+  border-radius: 3px;
 }
 
-input {
-  width: 200px;
-  height: 40px;
-  font-size: 20px;
-  background-color: rgb(243, 207, 230);
-  padding: 10px;
-  border: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-label {
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(244, 246, 248);
-}
-
-#add {
-  font-size: 28px;
-  width: 140px;
-  padding: 8px;
-  border-radius: 8px;
-  background-color: rgb(136, 130, 136);
-  color: rgb(43, 49, 54);
-}
-
-::placeholder {
-  color: rgb(98, 102, 105);
+.options i {
   font-size: 25px;
 }
 
-.task-list h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: rgb(65, 65, 62)
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
-#tasks .task {
-  display: flex;
-  justify-content: space-between;
+#tasks div {
+  border: 3px solid rgb(168, 69, 132);
+  background-color:rgb(243, 207, 230);
+  border-radius: 6px;
   padding: 5px;
-}
-
-.task .actions button {
-  cursor: pointer;
-  margin: 0 0.5rem;
-  font-size: 1.125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.task .actions .completed {
-  color: rgb(151, 67, 136);
-  font-size: 20 px;
-  text-transform: uppercase;
-}
-
-#completed button {
-  color: rgb(189, 136, 168);
-}
-
-.task .actions .edit {
-  background-color: rgb(151, 67, 136);
-  color: antiquewhite;
-
-}
-
-.task .actions .delete {
-  background-color: rgb(219, 76, 107);
-  color: antiquewhite;
-}
-
-form {
   display: flex;
-  flex-direction: column;
-  background-color: rgb(110, 66, 99);
-  margin-top: 20px;
-  align-items: center;
-  gap: 7px;
-  color: rgb(249, 245, 248);
-}
-
-.outputs {
-  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: column;
+  gap: 4px;
 }
 
-.list {
-  align-items: center;
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
 }
 
-#notice {
-  color: rgb(247, 243, 243);
-  padding: 8px;
-  border-radius: 2px;
-  font-size: 28px;
+#tasks div .options i {
+  cursor: pointer;
 }
 
-/*code to style the element once the button is clicked*/
-.grey-mode {
-  background-color: rgb(152, 91, 137);
-  color: rgb(181, 170, 176);
+#msg {
+  color: red;
+}
+
+.greyMode {
+  background-color: rgb(139, 138, 136);
 }
